@@ -12,7 +12,10 @@
   <title>weather-dashboard</title>
 </head>
 <body>
+  
   <header class="container-fluid d-flex align-content-center justify-content-center text-light h1 p-4 bg-primary">Weather Dashboard</header>
+
+
   <main class="container-fluid min-vw-100 bg-light row">
 
 
@@ -21,21 +24,26 @@
       <input class="p-3 h2 rounded-lg" type="text" name="" id="search-bar" placeholder="San Diego">
       <button class="text-light p-2 h5 bg-primary border-0 mt-2 rounded-sm" id="search-button">Search</button>
       <hr class="w-100">
-      <ul id="history-list"></ul>
+      <ul class="" id="history-list"></ul>
     </nav>
 
     <div class="grid w-50 mt-4" id="weather-info-container">  
-      <h1 class="h-25 w-100 col mb-4 bg-primary" id="city-weather-title">Atlanta (9/13/2022)</h2>
+      <div class="h-25 w-100 col bg-primary " id="city-overview">
+        <h1 class="mb-4 " id="city-name">Atlanta (9/13/2022)</h2>
+          <p class="h5" id="city-temp">Temp: </p>
+          <p class="h5" id="city-wind">Wind: </p>
+          <p class="h5" id="city-humid">Humidity: </p>
+      </div>
       
-      <div class="vstack gap-2 h-25 bg-info" id="each-day-forecast-container">
+      <div class="h-25 bg-info  overflow-hidden" id="each-day-forecast-container">
           <h2 class="font-weight-bold">5-Day Forecast:</h2>
 
-        <div class="row gap-5" id="each-day-forecast">
-          <div class="col bg-secondary each-day-weather">t</div>
-          <div class="col bg-secondary each-day-weather">t</div>
-          <div class="col bg-secondary each-day-weather">t</div>
-          <div class="col bg-secondary each-day-weather">t</div>
-          <div class="col bg-secondary each-day-weather">t</div>
+        <div class="row gap-5 h-75 m-2" id="each-day-forecast">
+          <div class="col bg-secondary mr-2 each-day-weather">t</div>
+          <div class="col bg-secondary mr-2 each-day-weather">t</div>
+          <div class="col bg-secondary mr-2 each-day-weather">t</div>
+          <div class="col bg-secondary mr-2 each-day-weather">t</div>
+          <div class="col bg-secondary mr-2 each-day-weather">t</div>
         </div>
       </div>
     </div>
